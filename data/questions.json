@@ -496,7 +496,7 @@
     {
         "id": 30,
         "type": "single",
-        "question": "有一個名為 Items 的資料表具有以下欄位:\n?ID (integer, 主索引鍵,自動產生\n?Description (text)\n?Completed (Boolean)\n您只需要刪除 Comp1eted 欄位設定為 True 資料列。\n請問您應該使用哪一個陳述式?",
+        "question": "有一個名為 Items 的資料表具有以下欄位:\n1.ID (integer, 主索引鍵,自動產生\n2.Description (text)\n3.Completed (Boolean)\n您只需要刪除 Comp1eted 欄位設定為 True 資料列。\n請問您應該使用哪一個陳述式?",
         "options": [
             "DELETE FROM Items WHERE (Items. Completed = 1)",
             "DELETE FROM WHERE (Items. Completed = 1)",

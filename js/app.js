@@ -336,7 +336,7 @@ function showQuestion() {
 
     // 顯示進度
     const progressDiv = document.getElementById('progress-info');
-    progressDiv.textContent = `第 ${current + 1} / ${total} 題　進度：${Math.round(((current + 1) / total) * 100)}%`;
+    progressDiv.textContent = `第 ${current + 1} / ${total} 題　進度：${Math.round(((current + 1) / total) * 100)}%　題目 ID：${q.id}`;
 
     // 處理題目內容，包含代碼區塊的高亮處理
     // 首先將字面值的 "\n" 替換為真正的換行符，然後再處理代碼區塊

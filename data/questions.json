@@ -1,0 +1,1629 @@
+[
+    {
+        "id": 1,
+        "type": "single",
+        "question": "您正在建置用以儲存測驗結果的應用程式。\n「您需要記錄每個答案正確或不正確。\n「您還需要將儲存資料所需的記憶體數量減到最少。\n「您應該使用哪一種資料類型? ",
+        "options": [
+            "boolean",
+            "double",
+            "integer",
+            "string"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用 `float()` 將距離轉為浮點數，因為距離可能有小數（如 1500.5 公尺）。\n● 使用 `int()` 將時間（分鐘和秒）轉為整數，因為這些值應該是整數。"
+    },
+    {
+        "id": 2,
+        "type": "single",
+        "question": "您建立了一個應用程式,其中包含一個名為Red的函式。\nRed 會呼叫一個名為Blue的函式:\n在Blue 執行完成之後,編譯器如何返回程式碼路徑中的正確位置?\n",
+        "options": [
+            "函式呼叫儲存在堆疊上。「記憶體配置單位會追蹤指示位置。",
+            "函式呼叫儲存在堆疊上。函式完成之後,其所有資料都將脫離堆疊,並將最後一個指示保留在頂端。",
+            "函式呼叫儲存在堆積的記憶體中。函式完成之後,除了最後一個指示以外,其所有資料都將終結。",
+            "函式呼叫儲存在堆積的記憶體中。「記憶體配置單位會追蹤指示位置。"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用 `int()` 將年齡轉為整數，因為年齡應該是整數。\n● 使用 `bool()` 將未成年轉為布林值，因為這是一個是非題。\n● 使用 `str()` 將姓名轉為字串，因為姓名應該是字串。\n● 使用 `float()` 將體重轉為浮點數，因為體重可能有小數（如 64.5 公斤）。\n● 使用 `str()` 將郵遞區號轉為字串，因為郵遞區號應該是字串。"
+    },
+    {
+        "id": 3,
+        "type": "single",
+        "question": "您執行了下列程式碼:\nint a = 10:\nint b= 20;\nint c= 30;\nint result = 0;\nif (a <= b || c > a)\nresult = 10:\nelse if (a <= b || c <= a)\nelse\nresult = 20;\nresult = 30;\n「程式碼執行完畢之後,result的值為何?",
+        "options": [
+            "0",
+            "10",
+            "20",
+            "30"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第 1 行， `age` 是從使用者輸入獲得的，因此它們的資料類型是字串（str）。\n● 在第 3 行，使用 `eval()` 會進行文字轉數字作業，\n但如果沒有明確指定型別，結果會是動態產生，\n因為 `age` 及 `year` 都是整數型態的字串，\n因此解析下來兩都皆為整數，而整數減掉整數結果仍為整數，\n因此`born`的資料類型是整數 int。\n● 在第 4 行，將浮點數轉換為字串後與另一個字串連接，因此`message`的資料類型應該是字串（str），而不是布林值（bool）。"
+    },
+    {
+        "id": 4,
+        "type": "single",
+        "question": "【CH01-4】在 Python 資料類型的課程中創建以下三個程式碼片段：\n<pre><code class=\"language-python\"># 程式碼片段 1\nx1 = \"5\"\ny1 = 4\na = x1 * y1\n# 程式碼片段 2\nx2 = 10\ny2 = 4\nb = x2 / y2\n# 程式碼片段 3\nx3 = 5.5\ny3 = 1\nc = x3 / y3</code></pre>",
+        "options": [
+            "執行程式碼片段 1 後，變數 a 的資料類為 str。",
+            "執行程式碼片段 2 後，變數 b 的資料類型是 float",
+            "執行程式碼片段 3 後，變數 c 的資料類型為 int"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在 `程式碼片段 1` 中，`x1`是字串類型，`y1`是整數類型，\n在 Python 中，當你使用乘法運算子 * 在一個字串和一個整數之間時，\n它執行的不是數學上的乘法，而是 `字串重複`。\n因此為會將字串 `5` 重複 4 次 = `5555`，因此變數 a 的資料類型仍然是字串（str）。\n● 在 `程式碼片段 2 `中，`x2` 和 `y2` 都是整數類型，除法運算會產生浮點數，因此變數 b 的資料類型是浮點數（float）。\n● 在`程式碼片段 3` 中，`x3`是浮點數，除以整數`y3`後結果仍然是浮點數，因此變數 c 的資料類型也是浮點數，而不是整數（int）。"
+    },
+    {
+        "id": 5,
+        "type": "single",
+        "question": "在例外狀況處理常式中,catch區段的用途為何?",
+        "options": [
+            "不論是否擲回例外狀況都執行程式碼",
+            "只有在擲回例外狀況時才執行程式碼",
+            "跳出錯誤處理常式",
+            "結束應用程式的執行作業"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `+1E10` 是科學記數法表示的浮點數，`type(+1E10)` 返回 `float`。\n● `5.0` 是浮點數，`type(5.0)` 返回 `float`。\n● `\"True\"` 是字串，`type(\"True\")` 返回 `str`。\n● `False` 是布林值，`type(False)` 返回 `bool`。\n\n因此正確答案是 `float, float, str, bool` 。"
+    },
+    {
+        "id": 6,
+        "type": "multioption",
+        "question": "有一個網頁顯示了clock元素。\n「你需要完成JavaScript程式碼以每秒更新clock元素一次。\n請選取正確的選項以完成程式碼。\n\n{A} {B} {C} \nfunction updateClock() {\n1et d new Date();\n\ndocument. getElementById(\"clock\"). innerHTML = \n  d. getHours() + \":\" +\n  d. getMinutes() + \":\" +\n  d. getSeconds();\n}\n",
+        "options": [
+            "fetch|setinterval|setTime|以上皆非",
+            "updateClock,|updateClock(),|updatedClock(),|updatedClock,",
+            "1|60|100|1000"
+        ],
+        "answer": [
+            2,
+            1,
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用 `int()` 將年齡轉為整數，因為年齡應該是整數。\n● 使用 `bool()` 將未成年轉為布林值，因為這是一個是非題。\n● 使用 `str()` 將姓名轉為字串，因為姓名應該是字串。\n● 使用 `float()` 將體重轉為浮點數，因為體重可能有小數（如 64.5 公斤）。\n● 使用 `str()` 將郵遞區號轉為字串，因為郵遞區號應該是字串。"
+    },
+    {
+        "id": 7,
+        "type": "single",
+        "question": "您撰寫了以下這段程式碼:\n<pre><code class=\"language-csharp line-numbers line-hight19\">public delegate void Notification();\npublic Notification DelegateA;\nDelegateA = MethodA;\nDelegateA += MethodA;\npublic delegate void otification();\npublic event Notification EventA;\nEventA = EventHandlerA\nEventA += EventHandlerA;</code></pre>\n請問哪一個陳述式會讓程式無法正確執行? ",
+        "options": [
+            "Delegate A = MethodA",
+            "DelegateA += MethodA;",
+            "EventA = EventHandlerA;",
+            "EventA += EventHandlerA"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `input()` 函數功能可輸入值，轉成文字型別的值傳給變數。\n● 因此需要使用 `int()` 將 `start` 和 `end` 先將輸入變數值轉換為整數，然後才能計算工作時數。\n● 最後使用 `str()` 將結果轉換為字串以便與其他字串連接。"
+    },
+    {
+        "id": 8,
+        "type": "single",
+        "question": "有一個堆疊包含整數值,這些值會按照下列順序推入堆疊:2、4、6、8:\n您執行了下列作業序列:\n<pre><code class=\"language-csharp line-numbers line-hight19\">Pop\nPush 3\nPop\nPush 4\nPush 6\nPush 7\nPop\nPop\nPop\n</code></pre>\n「這些作業執行完畢之後,最上層元素的值為何?",
+        "options": [
+            "2",
+            "3",
+            "6",
+            "7"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用 `float()` 將平均分數轉換為浮點數，會保留小數部分，不符合要求。\n● `int()` 將平均分數轉換為整數，去除小數部分。\n● 使用 `**`（冪運算符），這不是計算平均分數的正確方法。\n● 使用 `//`（整除運算符），這會直接計算整數平均分數，去除小數部分。\n● 因此正確答案是使用 `int()` 及 `//`（整除運算符）。"
+    },
+    {
+        "id": 9,
+        "type": "single",
+        "question": "您任職於某個應用程式開發團隊。該應用程式存放於 Git 檔控制系統中。您計劃將一項新功能加入至應用程式。這項功能需要數週的時間來完成。其他團隊成員所進行的應用程式維護作業不得影響您的工作。請問您該怎麼做?\n請將清單中適當的詞彙\n<pre><code class=\"language-csharp line-numbers line-hight19\">詞彙\n1 合併 2 提取要求 3 推送\n4 分支 5 認可     6 複製\n</code></pre>\n移至正確位置\n您應該先建立原始程式碼的 {A 詞彙}\n當您在本機工作並確認變更時,需要執行 {B 詞彙} ,如此您的變更才能儲存在本機存放庫中。\n然後,您應該執行 {C 詞彙} 以將您的變更儲存在遠端存放庫中。\n為了通知其他開發人員您所做的變更,您應該建立 {D 詞彙}\n在您的功能完成之後,其他開發人員應該執行 {E 詞彙},以完成敘述。",
+        "options": [
+            "45321",
+            "12345",
+            "23451",
+            "53124"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先計算 `a % b`，即 `24 % 7`，結果是 `3`。\n● 然後計算 `3 * 100`，結果是 `300`。\n● 接著計算 `2.0 ** 3.0`，即 `2.0` 的立方，結果是 `8.0`。\n● 然後計算 `(300 // 8.0)`，整除運算結果是 `37.5`。\n● 最後計算 `37.5 - 7`，結果是 `30.5`。"
+    },
+    {
+        "id": 10,
+        "type": "single",
+        "question": "請將清單中的每個版本控制系統命令\n<pre><code class=\"language-csharp line-numbers line-hight19\">命令\n1 branch  2 checkout\n3 commit  4 merge\n5 rollback</code></pre>\n移至正確的描述\n儲存新的專案快照 {A 命令}\n管理開發程式碼行 {B 命令}\n更新工作專案的全部或其中一部分 {C 命令}\n將您的本機專案指回先前的狀態 {D 命令}\n將另一個專案的內容導入目前的專案 {E 命令}",
+        "options": [
+            "12345",
+            "21354",
+            "35142",
+            "23451"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 正確是將 `a` 先加上 `5`，然後將結果平方。\n● 因此正確答案是 `b = (a + 5)**2` 。"
+    },
+    {
+        "id": 11,
+        "type": "single",
+        "question": "您正在為應用程式設計一個C# 類別:\n您需要將 access Count 成員變數的可用性限制為基底類別以及衍生自基底類別的任何類別。\n請問您應該使用哪個存取修飾詞? ",
+        "options": [
+            "interna1",
+            "private",
+            "protected",
+            "public"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 正確地檢查如果 `kid` 和 `senior` 都是 `False`，即都不是小朋友和老年人身份，則不應該給予折扣。\n● 因此正確答案是 if not (kid or senior):。"
+    },
+    {
+        "id": 12,
+        "type": "single",
+        "question": "哪一個詞能描述將物件的實值型別轉換成參考型別的程序? ",
+        "options": [
+            "Boxing",
+            "Unboxing",
+            "介接",
+            "對應"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `0 or 5` 的結果是 `5`，因為 `or` 運算符會返回第一個真值，因此這個表達式的值是 `5`，而不是 `True`。\n● bool(0) 的結果是 `False`，因為 `bool(0)` 返回 `False`。\n● `None is None` 的結果是 `True`，因為 `None is None` 確實是 `True`。\n● `-5 < 0 < 5` 的結果是 `True`，因為這是一個連鎖比較，表示 `-5` 小於 `0` 且 `0` 小於 `5`。"
+    },
+    {
+        "id": 13,
+        "type": "single",
+        "question": "您有一個具有屬性的類別。\n16 1 您需要確保該類別的取用者可以寫入屬性的值。\n請問您應該使用哪一個關鍵字?",
+        "options": [
+            "set",
+            "get",
+            "add",
+            "value"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先計算括號內的部分：`(1 + 2)` 等於 `3`。\n● 然後計算 `3 ** 2`，結果是 `9`。\n● 接著計算 `2 ** 2`，結果是 `4`。\n● 現在將這些值代入原式：\n  `(3 * 9 - 4 * 3)`\n  `= (27 - 12)`\n  `= 15`。"
+    },
+    {
+        "id": 14,
+        "type": "single",
+        "question": "類別C 和類別D 繼承自類別B。\n類別B 繼承自類別A\n這些類別的方法如下表所示。\n<pre><code class=\"language-python line-numbers line-hight19\">類別 方法\nA    m1\nB    m2\nC    m3\nD    m4\n</code></pre>\n所有類別都具有受保護的範圍。\n類別C可以存取哪些方法? ",
+        "options": [
+            "m1 和 m3",
+            "m2 和 m3",
+            "僅 m3 和 m4",
+            "m1、m2 和 m3"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第一次 print 後，顯示的是變數 a 的值，即'Test 1'。\n● 在第二次 print 後，顯示的是變數 a 的值，即'Test 1Test 2'，因為在這一行中，變數 a 被更新為原本的值加上變數 b 的值。\n● 在第三次 print 後，顯示的是變數 b 的值，即'Test 2'。"
+    },
+    {
+        "id": 15,
+        "type": "single",
+        "question": "哪一個詞能描述將物件轉換成較一般類型的程序?",
+        "options": [
+            "向上轉型",
+            "向下轉型",
+            "介接",
+            "Flex 處理"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項1 的運算式為 `a+b`，將首先進行計算。\n● 選項2 的運算式為 `b*c`，將其次進行計算。\n● 選項3 的運算式為先執行 'a + b' 再 '* c' 再 `- d`，將最後進行計算。"
+    },
+    {
+        "id": 16,
+        "type": "single",
+        "question": "衍生類別可以寫哪一種函式?",
+        "options": [
+            "static 函式",
+            "private virtual 函式",
+            "protected virtua1 成員函式",
+            "擬 public 成員函式"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在 Python 中，運算的優先順序如下：\n1. 括弧\n2. 指數 (**)\n3. 正數 (+)、負數 (-) 與反位元 (not)\n4. 乘法和除法 (*, /)\n5. 加法和減法 (+, -)\n6. 且 (And)\n● 因此正確的順序是：括弧 -> 指數 -> 正數、負數與反位元 -> 乘法和除法 -> 加法和減法 -> 且。"
+    },
+    {
+        "id": 17,
+        "type": "single",
+        "question": "下列哪一項敘述正確描述了在基底類別中宣告為虛擬的 C# 方法?",
+        "options": [
+            "衍生類別的實作看不到此方法。",
+            "可透過衍生類別本身的實作覆寫此方法。",
+            "必須在直接繼承自該類別的任何非抽象類別中覆寫此方法。",
+            "無法透過衍生類別本身的實作覆寫此方法。"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項1 的程式碼為 `ontime == \"n\"`，表示如果車輛不準時歸還，需要加費 1 天費用。\n● 選項2 的程式碼為 `day_rented == \"Sunday\"`，表示如果在星期天租車，則可以享受 10% 折扣。\n● 選項3 的程式碼為 `day_rented == \"Thursday\"`，表示如果在星期四租車，則可以享受 20% 折扣。"
+    },
+    {
+        "id": 18,
+        "type": "single",
+        "question": "您正在擴充一個儲存及顯示各種賽跑結果的應用程式。此應用程式包含下列定義:\n<pre><code class=\"language-python line-numbers line-hight19\">public interface IDisplayResult {\n  void Display();\n}\n\npublic class Race {\n  public int Seconds;\n  public virtual void Display()\n  {\n    Console. WriteLine (Seconds);\n  }\n}\n</code></pre>\n\n下列程式碼會顯示競賽的結果:\n<pre><code class=\"language-python line-numbers line-hight19\">var rl = new FootRace ();\nvar r2 = rl as IDisplayResult;\nr1.Seconds = 99;\nr1.Display();\nr2.Display();\nr1.DisplayRaw();</code></pre>\n此程式碼必須輸出下列結果至主控台:\n<pre><code class=\"language-python line-numbers line-hight19\">99 seconds\n1.65 minutes\n99\n</code></pre>\n你需要實作 FootRace 類別。\n請將清單中適當的宣告移至正確位置,以完成程式碼:\n\n宣告\n<pre><code class=\"language-python line-numbers line-hight19\">1 public override void Display() {\n2 public void DisplayRaw() {\n3 void DisplayResult. Display() {\n4 private void Display() {</code></pre>\n作答區\n<pre><code class=\"language-python line-numbers line-hight19\">public class FootRace: Race, IDisplayResult {\n  {A 宣告}\n  Console.WriteLine(Seconds + \" seconds\");\n}\n  {B 宣告}\n  base. Display();\n}\n{C 宣告}\n  Console.WriteLine(Seconds / 60d + \"minutes\");\n  }\n}</code></pre>",
+        "options": [
+            "1|2|2.2",
+            "1|2|2.2",
+            "1|2|2.2"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `print(a / b)` 的輸出結果是 `2.2`，因為這是浮點數除法，返回除法運算的 `值`。\n● `print(a // b)` 的輸出結果是 `2`，因為這是整除運算，返回除法運算的 `商數` 。\n● `print(a % b)` 的輸出結果是 `1`，因為這是整除運算，返回除法運算的 `餘數`。"
+    },
+    {
+        "id": 19,
+        "type": "single",
+        "question": "您需要將所有樣式設定分組成個別的檔案,以便套用至 Web 應用程式的所有頁面\n請問您該怎麼做?",
+        "options": [
+            "使用內部樣式表。",
+            "使用內嵌樣式。",
+            "使用外部樣式表。",
+            "使用可延伸標記語言(XML)結構描述"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 第 3 行的語法是不正確的比較，應該是用 `==` 取代 `=`。\n● 第 6 行的語法只有 n1 小於等於 n2 時才會列印出來。\n● 第 8 行的語法只有 n1 大於 n2 時才會列印出來。\n● 在 9 行的語法是不正確的比較，應該是用 `==` 取代 `<>`。"
+    },
+    {
+        "id": 20,
+        "type": "single",
+        "question": "您正在開發一個 Web 程式。\n你需要使用階層式樣式表(CSS)建立下列圖形:\n請選擇正確的選項以完成句子。\n<img src='images\\q24.jpg'></img>\n對於 background-image 樣式,您應該使用此值:",
+        "options": [
+            "linear-gradient(to top, green, black);",
+            "linear-gradient(to bottom, green, black);",
+            "radial-gradient(green, black);",
+            "repeating-linear-gradient(green, black);"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● #x=0時：party、x=1時：cake、x=2時：birthday、x=3時：birthday"
+    },
+    {
+        "id": 21,
+        "type": "single",
+        "question": "您正在開發一個 Web 程式。\n你需要使用階層式樣式表(CSS)建立下列圖形:\n請選擇正確的選項以完成句子。\n<img src='images\\q25.jpg'></img>\n對於 background-image 樣式,您應該使用此值:",
+        "options": [
+            "10px",
+            "10px, 10px, 10px;",
+            "inherit;",
+            "initial;"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● #x=0時：party、x=1時：cake、x=2時：birthday、x=3時：birthday"
+    },
+    {
+        "id": 22,
+        "type": "single",
+        "question": "您正在建立一個 Web 應用程式。\n即將存取該應用程式的用戶端電腦會執行各種網頁瀏覽器:\n哪一個詞能描述讓應用程式可供用戶端電腦存取的程序? ",
+        "options": [
+            "轉型",
+            "封裝",
+            "裝載",
+            "虛擬化"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● list_4 的值是 [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]，因為 list_3 包含了 list_1 和 list_2 的所有元素，然後再乘以 2，這樣就重複了兩次。"
+    },
+    {
+        "id": 23,
+        "type": "single",
+        "question": "請選取正確的選項以完成句子。\n所有網頁伺服器都有____位址和網域名稱,用以在網際網路上識別其身分。",
+        "options": [
+            "FTP",
+            "HTML",
+            "HTTP",
+            "IP"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `in` 關鍵字用於檢查某個值是否存在於序列中，這裡是檢查 4 是否在 aList 中。\n● 因此，程式碼會輸出 True。"
+    },
+    {
+        "id": 24,
+        "type": "single",
+        "question": "請選取正確的選項以完成句子。\n網頁伺服器會經由_______通訊協定接受用戶端要求,然後以網頁的形式將資料傳回用戶端來回應。",
+        "options": [
+            "FTP",
+            "HTML",
+            "HTTP",
+            "IP"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第一次 print 後，`aList is bList` 會顯示 False，因為它們是不同的物件。\n● 在第二次 print 後，`aList == bList` 會顯示 False，因為它們的內容不同。\n● 在第三次 print 後，`aList is bList` 會顯示 True，因為它們現在指向同一個物件。\n● 在第四次 print 後，`aList == bList` 會顯示 True，因為它們的內容相同。"
+    },
+    {
+        "id": 25,
+        "type": "single",
+        "question": "請選取正確的選項以完成句子。\n擁有存取權的用戶端可以經由_______通訊協定,修訂或移除裝載在網頁伺服器上的內容。",
+        "options": [
+            "FTP",
+            "HTTP",
+            "IP",
+            "SMTP"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第一個空格中，應該使用 `range(len(backwards_pname)-1, -1, -1)`，\n這樣可以從字串的最後一個字元開始迭代到第一個字元。\n● 在第二個空格中，應該使用 `backwards_pname[index]`，\n這樣可以正確地取得每個字元並將其添加到 `forward_pname` 中。"
+    },
+    {
+        "id": 26,
+        "type": "single",
+        "question": "哪一個程序會將資料轉換為 Web 服務所用的 XML 字串?",
+        "options": [
+            "還原序列化",
+            "序列化",
+            "解碼",
+            "編碼"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第一個程式碼片段中，`alph[3: 15]` 會返回從索引 3 到 14 的子字串，即 `defghijklmno`。\n● 在第二個程式碼片段中，`alph[3: 15: 3]` 會返回從索引 3 開始，每隔 3 個字元取一個，即 `dgjm`。\n● 在第三個程式碼片段中，`alph[15: 3: -3]` 會返回從索引 15 到 4 的子字串，每隔 3 個字元取一個，即 `ponmlkjihgfe`。\n● 在第四個程式碼片段中，`alph[::-3]` 會返回整個字串的反向，每隔 3 個字元取一個，即 `olif`. "
+    },
+    {
+        "id": 27,
+        "type": "single",
+        "question": "請在圖表中指出 MVC 架構模式的正確元件。請選取正確的選項以完成圖表。\n<img src='images\\q27.jpg'></img>",
+        "options": [
+            "231",
+            "123",
+            "312",
+            "213"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個情況下，`classroom[0: -3]` 和 `classroom[: -3]` 都可以正確地取得除了最後 3 名同學以外的所有同學。\n● 因此，選項 2 和選項 4 是正確的。"
+    },
+    {
+        "id": 28,
+        "type": "single",
+        "question": "請完成圖表以解說 MVC 架的核心功能。請將每個動作\n動作\n1 將事件轉換成要求\n2 顯示資料\n3 解譯並傳遞資料\n4 使用者點選按鈕\n5 驗證要求、儲存資料\n\n移至正確的位置\n\n檢視(A 執行)->控制器(B 執行)->模型(C 執行)->控制器(D 執行)->檢視(E 執行)",
+        "options": [
+            "12345",
+            "23154",
+            "34512",
+            "41532"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● Python 陣列元素值由 0 開始算， 0 = 第 1 個元素 , 1 = 第 2 個元素，以此類推。\n ● month[2:2] 這會建立一個從索引 2 開始到索引 2 (不包含) 的切片，結果會是一個空清單。\n ● month[::2] 這會從清單的開頭 (索引 0) 開始，每間隔一個值取一個元素。這會包含第一個月份，但題目要求從第二個月份開始。\n ● month[1::2] 從索引 1 (第二個元素) 開始一直取到清單的末尾，每次取一個元素後，跳過接下來的一個元素 (步長為 2)。\n ● month[1:2]: 這會建立一個從索引 1 開始到索引 2 (不包含) 的切片，結果只會包含第二個月份的名稱。"
+    },
+    {
+        "id": 29,
+        "type": "single",
+        "question": "您正在檢閱一項資料庫設計。此設計的其中一部分如下圖所示。\n哪一個詞能描述 Customer 與 Order 之間的關聯性?\n<img src='images\\q29.jpg'></img>",
+        "options": [
+            "多對多",
+            "多維",
+            "一維",
+            "一對多"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在選項 1 中，正確的程式碼是 `if numerator is None or denominator is None:`，這樣可以檢查 `分子或分母是否為 None`。\n● 在選項 2 中，正確的程式碼是 `elif denominator == 0:`，這樣可以檢查 `分母是否為零` 。"
+    },
+    {
+        "id": 30,
+        "type": "single",
+        "question": "有一個名為 Items 的資料表具有以下欄位:\n?ID (integer, 主索引鍵,自動產生\n?Description (text)\n?Completed (Boolean)\n您只需要刪除 Comp1eted 欄位設定為 True 資料列。\n請問您應該使用哪一個陳述式?",
+        "options": [
+            "DELETE FROM Items WHERE (Items. Completed = 1)",
+            "DELETE FROM WHERE (Items. Completed = 1)",
+            "DELETE FROM Items",
+            "DELETE FROM Items WHERE (Items.Completed = 0)"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式中，`students` 是一個字典，包含了 `整數` 和 `字串` 兩種資料型態。\n● `student` 變數是由使用者輸入的，因此它的資料型態是 `字串` 。\n● 第 3 行找不到學生是因為 `student` 變數的資料型態是 `字串` ，而 `students` 字典的鍵值是 `整數` ，這導致了不符合的資料型態。"
+    },
+    {
+        "id": 31,
+        "type": "single",
+        "question": "請設定交易以符合下列需求:\n?如果客戶只有一張發票,請刪除發票。\n?如果客戶有多張發票,請取消交易。\n程式碼結構如下圖:\n請問 A 部分應填入下列何者程式碼?",
+        "options": [
+            "TRY TRAN;",
+            "BEGIN TRAN;",
+            "TRAN;",
+            "BEGIN;"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `name` 變數的資料型態是字串(使用 s)。\n●  `average` 變數的資料型態是浮點數(使用 f)，且需要有小數2位，即 `%6.2f` 符合。"
+    },
+    {
+        "id": 32,
+        "type": "single",
+        "question": "請設定交易以符合下列需求\n?如果客戶只有一張發票,請刪除發票。\n?如果客戶有多張發票,請取消交易。\n程式碼結構如下圖:\n請問 B 部分應填入下列何者程式碼?",
+        "options": [
+            "SAVE TRAN;",
+            "REVOKE TRAN;",
+            "ROLLBACK TRAN;",
+            "END TRAN;"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在第 5 行的程式碼中，應該使用 `print('{0: 10} {1: 5.1f} {2: 7.2f}'.format(fields[0], eval(fields[1]), eval(fields[2])))`"
+    },
+    {
+        "id": 33,
+        "type": "single",
+        "question": "請設定交易以符合下列需求:\n如果客戶只有一張發票,請刪除發票。\n如果客戶有多張發票,請取消交易。\n程式碼結構如下圖:\n請問 C 部分應填入下列何者程式碼?\n哪一個LINQ運算子會壓平合併序列? ",
+        "options": [
+            "SelectMany",
+            "GroupBy",
+            "ToArray",
+            "Cast"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 使用了 `format` 方法。\n● 選項 2 使用了字符串拼接。\n● 選項 3 使用了舊式的格式化方法 `%`。\n● 選項 4 和 5 沒有將產品名稱括在雙引號內，因此不符合要求。"
+    },
+    {
+        "id": 34,
+        "type": "single",
+        "question": "如何設定 NoSQL 文件資料庫的資料結構?",
+        "options": [
+            "設為 XML",
+            "使用兩個資料行:一個代表索引鍵,一個代表值",
+            "設為資料列和資料行",
+            "設為節點、邊緣和屬性"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `animals` 字串使用了格式化方法 `format`，\n其中 `{1}` 代表第二個參數 `y`，`{0}` 代表第一個參數 `x`，`{2}` 代表第三個參數 `z`。\n因此輸出的結果是 `Lion and Tiger and Jaguar`。"
+    },
+    {
+        "id": 35,
+        "type": "single",
+        "question": "您正在為應用程式建立必要的變數。\n您將儲存在這些變數中的資料具有下列特性:\n1.由數字組成\n2.包含有小數點的數字\n3.需要超過七位數的精確度\n4.您需要將儲存資料所需的記憶體數量減到最少。\n\n您應該使用哪一種資料類型? ",
+        "options": [
+            "byte",
+            "decimal",
+            "double",
+            "float"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● `product_name` 變數用來儲存使用者輸入的產品名稱。\n● `input()` 函數會顯示提示訊息，並等待使用者輸入。\n● 使用者輸入的值會被賦值給 `product_name` 變數，然後在最後一行被列印出來。"
+    },
+    {
+        "id": 36,
+        "type": "single",
+        "question": "您正在為應用程式建立變數。\n您將儲存在這個變數中的資料具有下列特性:\n1.由數字和字元組成\n2.包含有小數點的數字\n\n您應該使用哪一種資料類型? ",
+        "options": [
+            "char",
+            "decima1",
+            "float",
+            "string"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 使用了 `print` 函數來顯示提示訊息。\n● 選項 2 使用了 `float` 函數來將輸入的字串轉換為浮點數。\n● 選項 3 使用了舊式的格式化方法 `%`。\n● 選項 4 和 5 沒有將產品名稱括在雙引號內，因此不符合要求。"
+    },
+    {
+        "id": 37,
+        "type": "single",
+        "question": "您執行了下列程式碼:<pre><code class=\"language-csharp\">bool beakerFull = true:\nbool flameOn = false;\nint iResult = 0;\nif (beakerFull) {\n  if(flameOn) {\n    iResult = 1;\n  }\n  else {\n    iResult = 2:\n  }\n}\nelse {\n  iResult = 3;\n}</code></pre>程式碼執行完畢之後,哪一個值會儲存在 Result 變數中? ",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在選項 1 中，`os.path.isfile('theFile.txt')` 用來檢查檔案是否存在。\n● 在選項 2 中，`print(file.read())` 用來顯示檔案內容。\n● 在選項 3 中，`open('theFile.txt', 'a')` 用來以附加模式打開檔案，如果檔案不存在則會創建它。\n● 在選項 4 中，`file.write('End of file')` 用來將文字寫入檔案。"
+    },
+    {
+        "id": 38,
+        "type": "single",
+        "question": "你有下列虛擬程式碼運算式。\n<pre><code class=\"language-csharp\">(A> B) AND (C < D)</code></pre>您使用下列值評估了該運算式:\n<pre><code class=\"language-csharp\">A = 3\nB = 4\nC = 4\nD = 5</code></pre>\n請問結果為何? ",
+        "options": [
+            "0",
+            "4",
+            "5",
+            "False"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個函式中，首先檢查檔案是否存在(if os.path.isfile(file):)，並以唯讀模式開啟檔案(with open(file, 'r') as file:)，並返回第一行的內容(return file.readline())。\n● 如果不存在(else:)在則返回 '檔案不存在'(return 'File dose not exist')。"
+    },
+    {
+        "id": 39,
+        "type": "single",
+        "question": "在例外狀況處理常式中, finally 段的用途為何?",
+        "options": [
+            "跳出錯誤處理常式",
+            "結束應用程式的執行作業",
+            "只有在擲回例外狀況時才執行程式碼",
+            "不論是否擲回例外狀況都執行程式碼"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個情況下，使用 `open('file_data', 'a')` 可以以附加模式(append mode)打開檔案，\n如果檔案不存在則會創建它，如果檔案已存在則會將新內容添加到檔案的末尾。"
+    },
+    {
+        "id": 40,
+        "type": "single",
+        "question": "有一個 C# 類別包含下列程式碼。\n<pre><code class=\"language-csharp\">public delegate string CheckCodingStyle(string code):public void CheckCode (string code, CheckCodingStyle algorithm){\n\n}</code></pre>\n您需要在第 05 行新增一個陳述式以呼叫 CheckCoding Style 委派。\n請問您應該使用哪個程式碼片段?\n<pre><code class=\"language-csharp\">algorithm(code); \nalgorithm = new CheckCodingSty1e(code);\nalgorithm.CheckCodingStyle(code);\ncode.CheckCodingStyle(algorithm);</code></pre>",
+        "options": [
+            "a1gorithm(code);",
+            "algorithm = new CheckCodingSty1e(code);",
+            "algorithm. CheckCodingStyle(code);",
+            "code. CheckCodingStyle(algorithm);"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，(程式碼1)和(程式碼2)的條件判斷都是用來檢查讀取的行是否為空行，如果不是空行則進行處理。\n● 因此，正確的選擇是 `(程式碼1).if line != '': (程式碼2).if line != '\\n':`。\n● 這樣可以確保只處理非空行，並且在讀取完所有行後關閉檔案。"
+    },
+    {
+        "id": 41,
+        "type": "single",
+        "question": "請檢閱 Winter Sports Corporation 的下列軟體需求規格。<hr />使用者介面\n．前端軟體: HTML、JavaScript 或 JavaScript 架構\n．資料庫:SQL\n．後端軟體: .NET Core\n\n硬體介面\n．行動裝置(回應式應用程式或透過網頁瀏覽器)\n．PC 和 Mac (透過網頁瀏覽器)\n\n軟體效能與品質\n．安全、可延伸且可擴充\n．將商務邏輯和展示功能隔開\n<hr />根據所需的系統功能,您應該選擇哪一種架構?",
+        "options": [
+            "Model-View-Controller (MVC)",
+            "Windows Forms",
+            "Entity Framework .NET Core",
+            "RESTful應用程式開發介面(RESTful API)"
+        ],
+        "answer": [
+           1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在選項 1 中，`os.path.isfile('myFile.txt')` 用來檢查檔案是否存在。\n● 在選項 2 中，`print(file.read())` 用來顯示檔案的內容。\n這樣可以確保程式能夠正確地檢查檔案是否存在並顯示其內容。"
+    },
+    {
+        "id": 42,
+        "type": "single",
+        "question": "有一個名為 the Stack 的堆疊包含整數值,這些值會按照下列順序推入堆疊:1、4、1、6、3、5、6。\n推入堆疊的第一個數字是 1。\n您執行了下列程式碼:\n<pre><code class=\"language-csharp line-numbers line-hight19\">for (int i=0; i<3;i++)\ntheStack. pop ();</code></pre>程式碼執行完畢之後, the Stac k將包含什麼?",
+        "options": [
+            "6、1、4、1",
+            "6、5、3、6",
+            "僅 1、4、1",
+            "僅 6、5、3"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，`data = input()` 允許使用者在主控台中輸入文字，並將用來接收使用者的輸入，並將其存儲在變數 `data` 中。"
+    },
+    {
+        "id": 43,
+        "type": "single",
+        "question": "你任職於某個應用程式開發團隊，該應用程式存放於 Git 原始檔控制系統中。\n您計劃將一項新功能加入至應用程式，這項功能需要數週的時間來完成。\n其他圍隊成員所進行的應用程式維護作業不得影響您的工作。\n請問您該怎麼做?\n\n請將適當的詞彙<pre><code class=\"language-csharp line-numbers line-hight19\">詞彙\n1 合併 2 提取要求 3 推送\n4 分支 5 認可     6 複製</code></pre>移至正確位置<pre><code class=\"language-csharp line-numbers line-hight19\">您應該先建立原始程式碼的 {A 詞彙}\n當您在本機工作並確認變更時, 需要執行 {B 詞彙},如此您的變更才能儲存在本機存放庫中。\n然後,您應該執行 {C 詞彙} 以將您的變更儲存在遠端存放庫中。\n為了通知其他開發人員您所做的變更,您應該建立 {D 詞彙}。\n在您的功能完成之後,其他開發人員應該執行 {E 詞彙}。</code></pre>以完成敘述。",
+        "options": [
+            "12345",
+            "25431",
+            "31254",
+            "45321"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，使用了多個條件判斷來確定學生的成績等級，並根據不同的成績範圍給予相應的字母等級。"
+    },
+    {
+        "id": 44,
+        "type": "single",
+        "question": "您的團隊使用了 GitHub 做為版本控制系統。\n請選取正確的選項以完成句子。\n認可檔案的變更之前,必須先進行 ",
+        "options": [
+            "複製",
+            "派生",
+            "提取",
+            "暫存"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，使用了多個條件判斷來確定使用者的年齡分級，並根據不同的年齡範圍給予相應的分級訊息。"
+    },
+    {
+        "id": 45,
+        "type": "single",
+        "question": "您的園隊使用了 GitHub 做為版本控制系統。\n請選取正確的選項以完成句子。\n若要以非破壞性方式將其個開放原始碼專案複製到您的設定檔,可加以:________ ",
+        "options": [
+            "複製",
+            "派生",
+            "提取",
+            "暫存"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中， grade = 76 ， rank = 3 ， 因此跳過兩個判斷來到 else: ，因此最終成績為 76 - 5 = 71。"
+    },
+    {
+        "id": 46,
+        "type": "single",
+        "question": "您的團隊使用了 GitHub 做為版本控制系統。\n請選取正確的選項以完成句子。\n若要從遠端存放庫中取得專案的最新修訂,請使用______命令。",
+        "options": [
+            "複製",
+            "派生",
+            "提取",
+            "暫存"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，首先檢查 `a` 是否小於 0，如果是，則回傳 'The result is a negative number'。\n● 接著，如果 `a` 大於 0，則回傳 'The result is a positive number'。\n● 如果 `a` 等於 0，則回傳 'The result is a zero'。"
+    },
+    {
+        "id": 47,
+        "type": "single",
+        "question": "請選取正確的選項以完成有關現代化加密的句子。數位簽章會使用: _______",
+        "options": [
+            "非對稱加密",
+            "對稱加密",
+            "一般加密",
+            "雜湊加密"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，首先檢查 `age` 是否大於等於 5 且 `school` 為真，如果是，則票價為 60 元。\n● 接著，如果 `age` 大於等於 5 且 `school` 為假，則進一步檢查 `age` 是否小於等於 17，如果是，則票價為 120 元；否則票價為 180"
+    },
+    {
+        "id": 48,
+        "type": "single",
+        "question": "請選取正確的選項以完成有關現代化加密的句子。數位簽章需要:____ ",
+        "options": [
+            "私密金鑰",
+            "公開金鑰",
+            "私密和公開金鑰",
+            "對稱金鑰"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，使用了多個條件判斷來檢查使用者輸入的數字是 1 位數、 2 位數還是 2 位數以上，並根據不同的數字範圍給予相應的提示訊息。"
+    },
+    {
+        "id": 49,
+        "type": "single",
+        "question": "在類別中,建構函式的用途為何?",
+        "options": [
+            "建立實值型別",
+            "自基底類別繼承",
+            "初始化該類別的物件",
+            "放類別持有的資源"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在這個程式碼中，使用了 while 迴圈來控制猜測的次數，最多允許三次猜測。\n● 如果猜測正確，則使用 break 來終止迴圈。\n● 如果猜測錯誤，則使用 chance + 1 來增加猜測次數，並繼續下一次猜測。"
+    },
+    {
+        "id": 50,
+        "type": "single",
+        "question": "您正在為應用程式設計一個 C# 類別。\n您需要確保 accessCount 成員變數只有基底類別可用。\n請問您應該使用哪個存取修飾詞? ",
+        "options": [
+            "internal",
+            "private",
+            "protected",
+            "public"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先檢查 `aList` 和 `bList` 是否相等，如果相等則印出 'aList is equal to bList'。\n● 如果不相等，則印出 'aList is not equal to bList'。"
+    },
+    {
+        "id": 51,
+        "type": "single",
+        "question": "下列程式碼會追蹤競賽選手排名的資訊:\n<pre><code class=\"language-csharp\">public class RankedPlayer\n{\n  private static string _defaultTeam;\n  private int _rank;\n  private string _name;\n\n  public RankedPlayer(string name, int ank):this(name)\n  {\n    _rank = rank;\n  }\n\n  public RankedPlayer(string name, string team, int rank): this(name, rank)\n  {\n    _defaultTeam = team;\n  }\n\n  public RankedPlayer (string name)\n  {\n    _name = name;\n  }\n}</code></pre>呼叫包含三個參數的建構函式時,指派欄位的順序為何?\n請將以下每個欄位正確排序\n\n欄位\n1 _defaultTeam\n2 rank\n3 _name",
+        "options": [
+            "123",
+            "321",
+            "231",
+            "132"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先檢查 `name` 是否為全大寫，如果是，則印出 'is all upper case.'。\n● 接著，如果 `name` 為全小寫，則印出 'is all lower case.'。\n● 如果 `name` 同時包含大寫和小寫字母，則印出 'is mixed case.'。"
+    },
+    {
+        "id": 52,
+        "type": "single",
+        "question": "您正在開發一個追蹤網球比賽的應用程式。\n比賽由下列 Match 類別代表:<pre><code class=\"language-csharp\">public class Match {\n  public Match()\n  {\n    Location = \"unknown\";\n  }\n  public string Location { get; set; }\n  public DateTime MatchDate {get; set; }\n}</code></pre>比賽是使用下列程式碼來建立:<pre><code class=\"language-csharp\">Match myMatch = new Match():\nmyMatch. Location = \"north region\";\nmyMatch. MatchDate = new DateTime (2021, 4, 14);</code></pre>新建立 Match 類別的 Locatio 屬性指派了幾次? ",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 for 迴圈來遍歷 `salaryList` 中的每個員工的工資。\n● 如果員工的工資大於等於 50 萬，則跳過該員工的工資調整。\n● 否則，根據公式計算新的工資並更新 `salaryList`。"
+    },
+    {
+        "id": 53,
+        "type": "single",
+        "question": "有一個名為 Mammal 的類別衍生自一個名為 Animal 的父類別。\nMammal 類別具有 Animal 類別的屬性和方法。\n哪一個詞能描述這種物件導向的概念?",
+        "options": [
+            "資料特殊化",
+            "結構描述模型化",
+            "封裝",
+            "繼承"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了兩個 for 迴圈來遍歷從 2 到 9 的所有乘法組合。\n● 第一個迴圈遍歷列(col)，第二個迴圈遍歷行(row)。\n● range(2, 10) 為產生從 2 到 9 的整數序列（注意 Python 的 range 不包含結束值）"
+    },
+    {
+        "id": 54,
+        "type": "single",
+        "question": "下列何者必須存在,才能從特定類別繼承屬性?",
+        "options": [
+            "has-a 關聯",
+            "is-a 關聯",
+            "靜態成員",
+            "公用屬性"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 while 迴圈來遍歷從 2 到 100 的所有整數。\n● 對於每個整數 `n`，使用 for 迴圈來檢查是否為質數，如果 `n` 可以被任何小於 `n` 的整數整除，則不是質數。\n● 如果是質數，則印出該質數。"
+    },
+    {
+        "id": 55,
+        "type": "single",
+        "question": "有一個名為 Glass 的類別繼承自一個名為 Window 的基底類別。\nWindow 類別包含一個名為 break() 的受保護方法。\n請問您該如何呼叫 break() 方法的 G1ass 類別實作?",
+        "options": [
+            "base.break();",
+            "this.break();",
+            "Glass.break();",
+            "Window.break();"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先定義了一個函式 `search(nums, num)`，該函式接受一個整數清單和一個整數作為參數。\n● 接著使用 for 迴圈遍歷清單中的每個整數，檢查是否有比參數整數大的數字。\n● 如果找到比參數整數大的數字，則印出相應的消息並停止迴圈。\n● 如果沒有找到比參數整數大的數字，則印出另一條消息。"
+    },
+    {
+        "id": 56,
+        "type": "single",
+        "question": "您建立了一個 AMumber 類型的物件並將類別定義如下:<pre><code class=\"language-csharp\">public class ANumber {\n  private int _number = 7;\n  public ANumber() {\n  }\n  public ANumber (int number)\n    _number = number;\n  }\n}</code></pre>您執行了下列程式碼:<pre><code class=\"language-csharp\">ANumber mynumber = new ANumber (3);</code></pre>程式碼執行完畢之後, number的值為何?",
+        "options": [
+            "null",
+            "0",
+            "3",
+            "7"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先定義了一個空的 `product_no` 變數，然後使用 while 迴圈來持續要求使用者輸入產品編號，直到輸入 'sentinel' 為止。\n● 接著將輸入的產品編號分割成兩部分，並檢查其格式是否符合要求。\n● 如果格式正確，則印出 True；否則印出 False。"
+    },
+    {
+        "id": 57,
+        "type": "single",
+        "question": "Circle and Square 這兩個類別繼承自 Shape 類別。\nCircle 和 Square 都自 Shape 類別繼承 Area ,但分別以不同的方式計算 Area 哪一個詞能描述這種物件導向的概念?",
+        "options": [
+            "封裝",
+            "抽象化",
+            "多型",
+            "超級類別化"
+        ],
+        "answer": [
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 while 迴圈來遍歷數字清單，並在找到 4 時使用 break 跳出迴圈。"
+    },
+    {
+        "id": 58,
+        "type": "single",
+        "question": "您正在擴充一個儲存及顯示各種賽跑結果的應用程式，此應用程式包含下列定義:<pre><code class=\"language-csharp\">public interface IDisplayResult {\n  void Display();\n}\npublic class Race {\n  public int Seconds;\n  public virtual void isplay()\n  {\n    Console. WriteLine (Seconds);\n  }\n}</code></pre>下列程式碼會顯示競賽的結果:<pre><code class=\"language-csharp\">var r1 = new FootRace();\nvar r2 = r1 as IDisplayResult;\nr1. Seconds = 99\n\nr1. Display();\nr2. Display();\nr1. DisplayRaw();</code></pre>此程式碼必須輸出下列結果至主控台:\n99 seconds\n1.65 minutes\n99\n\n您需要實作 FootRace 類別，請將清單中適當的宣告移至正確位置<pre><code class=\"language-csharp\">宣告\n1 public override void Display() {\n2 public void DisplayRaw() }\n3 void IDisplayResult. Display) {\n4 private void Display() {</code></pre><pre><code class=\"language-csharp\">作答區\npublic class FootRace: Race, IDisplayResult {\n  {A 宣告}\n  Console. WriteLine (Seconds + \" seconds\");\n  }\n    {B 宣告}\n    base. Display();\n    }\n    {C 宣告}\n    Console. WriteLine(Seconds / 60d +\"minutes\");\n  }\n}</code></pre>以完成程式碼。",
+        "options": [
+            "431",
+            "123",
+            "134",
+            "312"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了兩個巢狀的 for 迴圈來列印星星，外層迴圈控制行數，內層迴圈控制列印星星的數量。"
+    },
+    {
+        "id": 59,
+        "type": "single",
+        "question": "您正在撰寫一個處理訂房要求的 web 應用程式。\n你需要確認每位訪客所選取的房間尚未被其他訪客預定\n你應該使用哪一種程式設計來判斷建立要求時房間仍然可用?",
+        "options": [
+            "批次處理",
+            "用戶端",
+            "多執行緒",
+            "伺服器端"
+        ],
+        "answer": [
+            4
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 if、elif 和 else 來根據成績的範圍來判斷並印出對應的字母成績。"
+    },
+    {
+        "id": 60,
+        "type": "single",
+        "question": "您的網站 (sunsetweb.org) 需要 SSL，您使用如下圖所示的設定建立了一個虛擬目錄。您將 Overview.jpg 檔案儲存在虛擬目錄中，您應該使用哪一個 URL 來存取該檔案?<img src='images\\q60.jpg' />",
+        "options": [
+            "https://sunsetweb.org/images/Overview.jpg",
+            "http://sunsetweb.org/images/Overview.jpg",
+            "http:/sunsetweb.org/myapp1ication/Images/Overview.jpg",
+            "https://sunsetweb.org/Storage/images/Overview.jpg"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 for 迴圈來遍歷字詞列表，並在找到特定字母時增加計數。"
+    },
+    {
+        "id": 61,
+        "type": "single",
+        "question": "下列 REST API Web 服務程式碼會在 www.sunsetweb.com 網域上執行:<pre><code class=\"language-csharp\">public class CarService/n{/n  private static List 1st = new List(new String[] {'Oil', 'Engine', 'Wheels', 'Paint'});/n/n  [WebGet(UriTemplate='/CarServices')]/n  public String etAllCarServices()/n  {/n    int count = 1st. Count;/n    String ServiceList = ''/n    for (int i = 0; i< count; i++)/n      ServiceList = ServiceList + 1st[i] + ',';/n    return ServiceList;/n/n  [WebGet (UriTemplate = '/CarServices/(ServiceListid}')]/n  public String GetCarServicebyID (String ServiceListid)/n  {/n    int id;/n    Int32. TryParse (ServiceListid, out id);/n    return 1st[id];/n  }/n}</code></pre>您對這個 web 服務發出了下列呼叫:<pre><code class=\"language-csharp\">www. sunsetweb.com/carservices/3</code></pre>請問輸出為何? ",
+        "options": [
+            "Paint",
+            "Oil",
+            "Engine",
+            "Wheels"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 for 迴圈來遍歷分數列表，並計算總分和平均分。"
+    },
+    {
+        "id": 62,
+        "type": "single",
+        "question": "請在圖表中指出 MV C架構模式的正確元件,請從清單中選取正確的選項以完成圖表(依照 ABC 順序回答)。<img src='images\\q62.jpg' />",
+        "options": [
+            "321",
+            "123",
+            "231",
+            "132"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了 while 迴圈來持續接收使用者輸入，並使用 for 迴圈來計算字詞的字元數。"
+    },
+    {
+        "id": 63,
+        "type": "single",
+        "question": "哪一個正規化要求資料表的屬性僅相依於主索引鍵?",
+        "options": [
+            "第一",
+            "第二",
+            "第三",
+            "第四"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先需要在第 3 行的 while 迴圈後面加上冒號 `:`，以正確結束條件語句。\n● 在第 6 行的 if 條件中，需要使用雙等號 `==` 來比較是否等於 6，並且也需要加上冒號 `:`。"
+    },
+    {
+        "id": 64,
+        "type": "single",
+        "question": "在更新資料庫的多個資料表時,使用交易有何優點?",
+        "options": [
+            "更新不會失敗",
+            "更新會以單位的形式成功或失敗",
+            "更新會盡快完成",
+            "如果發生錯誤,將無法回復變更"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了正確的註解語法 (#) 來描述函式的功能。"
+    },
+    {
+        "id": 65,
+        "type": "single",
+        "question": "您有一部限制資料連線數目的伺服器。 您應該使用下列何者,在使用者數目超過可用的連線數目時將連線能力最佳化?",
+        "options": [
+            "連線共用",
+            "連線逾時",
+            "索引",
+            "正規化"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 第一到第四行的註解將在語法檢查時被忽略。\n● 第二和第三行中的井字符號 (#) 是必要的，因為它們用來標記註解。\n● 第六行中的字串 `comment` 並不會被解釋為註解，因為它是被引號包圍的字串。\n● 第七行中的內嵌註解是正確的，因為它使用了井字符號 (#)。"
+    },
+    {
+        "id": 66,
+        "type": "multiple",
+        "question": "您應該在有效的單元測試案例中納入哪兩種資訊?(請選擇2個答案)。",
+        "options": [
+            "測試案例必要的任何前置條件",
+            "測試案例的預期結果",
+            "與其他測試案例的整合",
+            "合成單一測試的所有使用案例",
+            "沒有任何判斷提示的測試案例",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 使用了正確的函式定義方式，並且參數名稱也符合函式的功能。"
+    },
+    {
+        "id": 67,
+        "type": "multiple",
+        "question": "下列哪兩項敘述正確描述了 JSON物件?(請選擇2個答案。)",
+        "options": [
+            "JSON物件可使用名稱/值對來建置",
+            "JSON物件可使用已排序的值清單來建置",
+            "JSON物件可運用命名空間",
+            "JSON物件可延伸",
+            "以上皆是",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 首先定義了一個函式 `calc_score`，該函式接受兩個參數：目前分數和一個值。\n● 接著將值增加到目前分數，並返回新的分數。"
+    },
+    {
+        "id": 68,
+        "type": "multiple",
+        "question": "下列哪兩項敘述描述了將資料庫正規化的優點?(請選擇2個答案。)",
+        "options": [
+            "正規化可降低磁碟空間使用量",
+            "正規化可防止資料不一致",
+            "正規化可將資料損毀的影響降到最低",
+            "正規化可減少結構描述限制",
+            "以上皆是",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 為了符合要求，必須將函式的參數 `points` 設定為預設值 1。\n● 當使用預設值定義任何參數時，其右側的參數也必須使用預設值進行定義。\n● 如果只用兩個參數呼叫函式，則第三個參數的值將為 None。\n● 函式內部的計算不會改變在第 6 行中變數 `points` 的值。"
+    },
+    {
+        "id": 69,
+        "type": "multiple",
+        "question": "連線共用有哪三項優點?(請選擇3個答案。)",
+        "options": [
+            "提升效能",
+            "提升可擴縮性",
+            "短建立連線的時間",
+            "不需要任何設定",
+            "提升安全性",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2,
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 呼叫 `getpay()` 函式不會發生錯誤，因為所有的參數都有預設值。\n● `getpay(salary = 5000)` 會回傳 5000，因為它符合 `if salary > 0:` 的條件。\n● `getpay(qty = 500, qtyrate=4)` 會回傳 2000，因為它符合 `if qty > 0:` 的條件。"
+    },
+    {
+        "id": 70,
+        "type": "multiple",
+        "question": "哪兩個程式碼片段可用來確保資源會釋出?(請選擇2個答案。)",
+        "options": [
+            "using 陳述式",
+            "using 指示詞",
+            "finally 區塊",
+            "throw 關鍵字",
+            "以上皆是",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 和選項 2 的正確答案都是 A，因為單行文件字串可以用單引號或雙引號來表示。\n● 選項 3 的正確答案是 C，因為可以使用 `cube.__doc__` 來列印函式的文件字串。\n● ITS ： A A B 而 ChatGPT ： D B C"
+    },
+    {
+        "id": 71,
+        "type": "multiple",
+        "question": "您應該在有效的單元測試案例中納入哪兩種資訊?(請選擇2個答案。)",
+        "options": [
+            "測試案例必要的任何前置條件",
+            "測試案例的預期結果",
+            "與其他測試案例的整合",
+            "結合成單一測試的所有使用案例",
+            "沒有任何判斷提示的測試案例",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 5,
+        "image": null,
+        "explanation": "● 函式 `petstore` 沒有寫 `return` 因此並不會傳回任何值，選項 1 是錯誤的。\n● 第 14 行和第 17 行的函式呼叫是有效的，因為它們符合函式的參數要求。\n● 第 16 行和第 18 行的函式呼叫會產生錯誤，因為它們使用了不正確的參數名稱或順序。\n● 第14和17行的函式呼叫，應該是有效呼叫，ITS答案 Yes；ChatGPT：No  #有效呼叫"
+    },
+    {
+        "id": 72,
+        "type": "multiple",
+        "question": "下列哪兩項敘述正確描述了 JSON物件?(請選擇2個答案。) ",
+        "options": [
+            "JSON 物件可使用名稱 / 值對來建置",
+            "JSON 物件可使用已排序的值清單來建置",
+            "JSON 物件可運用命名空間",
+            "JSON 物件可延伸",
+            "以上皆是",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的函式呼叫是正確的。\n● 選項 2 的函式呼是錯誤的， student 參數 應為 name 參數。\n● 選項 3 的函式呼叫也是正確的，因為它直接傳入了學生姓名和年級。\n● 選項 4 的函式呼叫是錯誤的，因為它使用了不正確的順序及參數名稱。"
+    },
+    {
+        "id": 73,
+        "type": "multiple",
+        "question": "連線共用有哪三項優點?(請選擇3個答案。)",
+        "options": [
+            "提升效能",
+            "提升可擴縮性",
+            "短建立連線的時間",
+            "不需要任何設定",
+            "提升安全性",
+            "以上皆非"
+        ],
+        "answer": [
+            1,
+            2,
+            3
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在 Python 中，單行註解是以 # 開頭的，因此選擇 2 是正確的。\n● 選擇 1 和選擇 4 是錯誤的，因為這些註解語法不是 Python 所使用的。\n● 選擇 3 是錯誤的，因為 // 是 JavaScript 和其他語言的註解語法，而不是 Python 的。"
+    },
+    {
+        "id": 74,
+        "type": "single",
+        "question": "「請回答有關單元測試的敘述: 單元測試會測試整個應用程式的整合與相依性?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在 Python 中，使用 `from datetime import datetime as dt` 可以將 `datetime` 模組中的 `datetime` 函式導入並設定為替代名稱 `dt`。\n● 選擇 1 是錯誤的，因為它沒有指定要導入的函式。\n● 選擇 3 和選擇 4 的語法都是錯誤的。"
+    },
+    {
+        "id": 75,
+        "type": "single",
+        "question": "請回答有關單元測試的敘述:單元測試方法會呼叫目前測試的方法,傳遞資料,然後檢查傳回值是否正確?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 錯誤的原因是因為沒有導入 `os` 模組。\n● 在使用 `os.path.isfile(filename)` 之前，必須先導入 `os` 模組。\n● 選擇 2、3 和 4 都是錯誤的，因為 `os.path.isfile` 方法確實存在並且接受一個參數。"
+    },
+    {
+        "id": 76,
+        "type": "single",
+        "question": "請回答有關單元測試的敘述: 單元測試的主要目標是取出應用程式中最小的可測試軟體部分,將此部分與其於程式碼隔離,然後判斷其行為表現是否完全符合預期?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 和選擇 3 是正確的。\n● 選擇 2 是錯誤的，因為 `random.randrange(11, 20, 1)` 的最大值是 20，不包括 20。\n● 選擇 4 是錯誤的，因為 `random.randint(11, 21)` 的最大值是 21，包括 21。"
+    },
+    {
+        "id": 77,
+        "type": "single",
+        "question": "請回答有關單元測試的敘述: 連結清單可進行排序?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 4 是正確的，因為 `random.randint(0, 10)` 可以生成 0 到 10 之間的隨機整數，包括 0 和 10。\n● 選擇 1 是錯誤的，因為 `random.random()` 生成的是 0 到 1 之間的浮點數。\n● 選擇 2 是錯誤的，因為 `random.randrange(0.0, 1.0)` 生成的是 0 到 1 之間的浮點數。\n● 選擇 3 是錯誤的，因為 `random.randrange()` 需要指定範圍。"
+    },
+    {
+        "id": 78,
+        "type": "single",
+        "question": "請回答有關連結清單的敘述:連結清單最多包含 100 個節點?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 和選擇 3 是正確的，因為它們都能生成符合條件的隨機數字。\n● 選擇 2 是錯誤的，因為 `randint(1,50)` 可能生成奇數。\n● 選擇 4 是錯誤的，因為 `randrange(2,50,1)` 會生成所有的整數，包括奇數。\n● 選擇 3 似乎不對，除非改成 print(randrange(2, 51, 2))"
+    },
+    {
+        "id": 79,
+        "type": "single",
+        "question": "請回答有關連結清單的敘述:您可以在連結清單內任何位置加入新的節點?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 和選擇 4 是正確的，因為它們都能滿足函式的要求。\n● 選擇 2 是錯誤的，因為 `math.floor(x)` 會將浮點數向下取整，而不是無條件進位。\n● 選擇 3 是錯誤的，因為 `math.fmod(x)` 會返回浮點數的模，而不是整數。\n● 選擇 5 是錯誤的，因為 `math.frexp(x)` 會返回浮點數的尾數和指數，而不是整數。\n● math.fabs(x) = 傳回浮點數的絕對值\n● math.floor(x) = #無條件捨去(向下取整)\n● math.fmod(x) = 取餘數(浮點除法後的餘數)\n● math.ceil(x) = 無條件進位(向上取整)\n● math.frexp(x) = 將浮點數拆成底數和指數(主要用於底層表示)"
+    },
+    {
+        "id": 80,
+        "type": "single",
+        "question": "請回答有關安全編碼做法的敘述:數位簽章會使用寄件者的公開金鑰來加密訊息?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 A 和 B，因為它們都可以用來獲取當前日期。\n● 選擇 2 的正確答案是 A，因為 `strftime('%A')` 可以獲取當前的工作日。\n● 選擇 3 的正確答案是 B，因為 `6 - now.weekday()` 可以計算出週剩餘天數。\n● 注意：選項中的字母可能有誤，應該是 `%A` 而不是 `&A`。"
+    },
+    {
+        "id": 81,
+        "type": "single",
+        "question": "請回答有關安全編碼做法的敘述: CSRF(跨網站偽造要求)權杖是用來防止攻擊?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 A，因為 `random.randint(1,50)` 可以生成 1 到 50 之間的隨機整數。\n● 選擇 2 的正確答案是 A，因為 `random.choice(groupList)` 可以從 `groupList` 中隨機選擇一個組別。\n● 選擇 B、C 和 D 都是不正確的，因為它們不符合要求。"
+    },
+    {
+        "id": 82,
+        "type": "single",
+        "question": "請回答有關安全編碼做法的敘述：防止 SQL 插入式攻擊的其中一種方式就是逸出使用者輸入?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 在 Python 中，`try` 語法可以有多個 `except` 子句，因此選項 A 是正確的。\n● 選項 B 是正確的，因為 `try` 語法可以沒有 `except` ，但須搭配 `finally` 子句才合法。\n● 選項 C 是正確的，因為 `try` 語法可以有一個 `finally` 子句與多個 `except` 子句。\n● 選項 D 是錯誤的，因為 `try` 語法只能有一個 `finally` 子句。"
+    },
+    {
+        "id": 83,
+        "type": "single",
+        "question": "某個專案包含一個名為 Person 的類別,以及一個名為 Tree 類別。\nTree 類別具有一個名為 color 的部份屬性,以及一個名為 Number Of Leaves 的受保護屬性。\n請選取[正確]或[錯誤]\nPerson 類別中的方法可以存取 co1or 屬性。 ",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 A，因為 `try` 語句用來捕捉可能發生的錯誤。\n● 選擇 2 的正確答案是 C，因為 `except` 用來處理 `ValueError` 異常。\n● 選擇 B、D 和 E 都是不正確的，因為它們不符合語法要求。"
+    },
+    {
+        "id": 84,
+        "type": "single",
+        "question": "某個專案包含一個名為 Person 的類別,以及一個名為 Tree 類別。\nTree類別具有一個名為 color 的部份屬性,以及一個名為 NumberOfLeaves 的受保護屬性。\n請選取[正確]或[錯誤]。\nPerson 類別中的方法可以存取 NumberOfLeaves 屬性。",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 C，因為 `assertEqual(x, y)` 用來測試變數的值是否相等。\n● 選擇 2 的正確答案是 A，因為 `assertIs(x, y)` 用來測試物件是否相同。\n● 選擇 3 的正確答案是 B，因為 `assertIn(x, y)` 用來測試某個值是否在清單中。\n● assertEqual(x, y) 測試的是「x 與 y 的值相等」\n● assertIs(x, y) 測試的是「x 與 y 是同一個記憶體中的物件」\n● assertIn(x, y) # 是否存在於 y 裡面(如清單、字串、字典鍵等等)\n● assertIsInstance(x, y) #確認 x 是否是類型 y 的實例，如果不是，則拋出 AssertionError"
+    },
+    {
+        "id": 85,
+        "type": "single",
+        "question": "某個專案包含一個名為 Person 的類別,以及一個名為 Tree 類別:\nTree類別具有一個名為 color 的部份屬性,以及一個名為 NumberOfLeaves 的受保護屬性。\n請選取[正確]或[錯誤]: Tree 類別中的方法可以存取 Person 中的所有私用屬性。",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 C，因為 `import` 用來導入模組。\n● 選擇 2 的正確答案是 B，因為 `unittest.TestCase` 是單元測試的基礎類別。\n● 選擇 3 的正確答案是 C，因為 `test_isInstance(self)` 是測試方法的命名慣例。\n● 選擇 4 的正確答案是 D，因為 `self.assertIsInstance(obj, cls)` 用來測試物件是否為特定類別的實例。\n● 本題 ITS 答案 C、B、C、B ChatGPT 答案 C、B、C、D"
+    },
+    {
+        "id": 86,
+        "type": "single",
+        "question": "請回答有關程式碼的敘述:\n<pre><code class=\"language-csharp\">var xhr = new XMLHttpRequest();\nxhr. onload = function() {\n  if(xhr.status === 200) {\n    responseObject = JSON. parse (xhr.responseText);\n    var newContent = '';\n    for (var i = 0; i < responseObject. menu. length; i++) {\n      newContent += '<p>Entree:' + responseObject. menuli]. Entree +'<br>';\n      newContent += 'Price:'+ responseObject. menu[i]. Price +'</p>';\n    }\n    document.getElementById('content').innerHTML = newContent:\n  }\n};\nxhr.open('GET', 'menu.json', true);\nxhr.send(nul1);</code></pre>在第02行, onload 物件會將要求傳送至伺服器。",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選擇 1 的正確答案是 D，因為 `try` 用來捕捉可能發生的錯誤。\n● 選擇 2 的正確答案是 C，因為 `except` 用來處理 `ValueError` 異常。\n● 選擇 3 的正確答案是 E，因為 `finally` 用來確保無論是否發生錯誤都會執行的程式碼。"
+    },
+    {
+        "id": 87,
+        "type": "single",
+        "question": "請回答有關程式碼的敘述:\n<pre><code class=\"language-csharp\">var xhr = new XMLHttpRequest();\nxhr. onload = function() {\n  if(xhr.status === 200) {\n    responseObject = JSON. parse (xhr.responseText);\n    var newContent = '';\n    for (var i = 0; i < responseObject. menu. length; i++) {\n      newContent += '<p>Entree:' + responseObject. menuli]. Entree +'<br>';\n      newContent += 'Price:'+ responseObject. menu[i]. Price +'</p>';\n    }\n    document.getElementById('content').innerHTML = newContent:\n  }\n};\nxhr.open('GET', 'menu.json', true);\nxhr.send(nul1);</code></pre>在第02行, status 是由處理要求的伺服器傳回。",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的正確答案是 Yes ，因為 `a` 和 `b` 是字串類型，無法進行指數運算。\n● 選項 2 的正確答案是 Yes ，因為 `result` 是字串類型，無法與其他字串進行相加運算。\n● 選項 3 的正確答案是 Yes ，因為 `eval` 函式可以將字串轉換為數值類型。"
+    },
+    {
+        "id": 88,
+        "type": "single",
+        "question": "請回答有關程式碼的敘述:\n<pre><code class=\"language-csharp\">var xhr = new XMLHttpRequest();\nxhr. onload = function() {\n  if(xhr.status === 200) {\n    responseObject = JSON. parse (xhr.responseText);\n    var newContent = '';\n    for (var i = 0; i < responseObject. menu. length; i++) {\n      newContent += '<p>Entree:' + responseObject. menuli]. Entree +'<br>';\n      newContent += 'Price:'+ responseObject. menu[i]. Price +'</p>';\n    }\n    document.getElementById('content').innerHTML = newContent:\n  }\n};\nxhr.open('GET', 'menu.json', true);\nxhr.send(nul1);</code></pre>在第13行, true 參數會指定非同步處理。",
+        "options": [
+            "正確",
+            "錯誤"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 89,
+        "type": "single",
+        "question": "請回答有關佇列的敘述: 佇列的項目數有限制?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 90,
+        "type": "single",
+        "question": "請回答有關佇列的敘述: 佇列是一種先進先出(FIFO) 資料結構?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 91,
+        "type": "single",
+        "question": "請回答有關佇列的敘述: 佇列的項目是按照加入的順序儲存?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 92,
+        "type": "single",
+        "question": "請回答有關 NoSQL 資料庫的敘述:文件資料庫會將資料儲存在類似 JSON 的檔案中?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 93,
+        "type": "single",
+        "question": "請回答有關 NoSQL 資料庫的敘述:文件資料庫的設計目的是以預先定義的關聯處理資料?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 94,
+        "type": "single",
+        "question": "請回答有關 NoSQL 資料庫的敘述:索引鍵值資料庫會將資料儲存成您可以修改或查詢其屬性的物件?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 95,
+        "type": "single",
+        "question": "實體關聯圖表 (ERD) 是專為物件導向的資料庫所設計?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            2
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 96,
+        "type": "single",
+        "question": "實體關聯圖表 (ERD) 包含實體、關聯和屬性?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    },
+    {
+        "id": 97,
+        "type": "single",
+        "question": "基數是指資料表的互相連結方式,例如一對多?",
+        "options": [
+            "是",
+            "否"
+        ],
+        "answer": [
+            1
+        ],
+        "weight": 1,
+        "image": null,
+        "explanation": "● 選項 1 的答案是 No — 程式碼中存在未定義變數 i 及 file_name ，將產生 UnDefined Error。\n● 選項 2 的答案是 Yes — 它不會正常執行，因為會直接因 i 及 file_name 未定義而產生執行階段錯誤，也因 i 未定義而執行 i = i + 1 產生邏輯錯誤。\n● 選項 3 的答案是 Yes ， i = i + 1 在未初始化的情況下會導致 NameError ，為執行階段錯誤。\n● 選項 4 的答案是 No ，語法是合法的，但執行時會出錯。"
+    }
+]

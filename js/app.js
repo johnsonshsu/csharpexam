@@ -249,10 +249,8 @@ function startQuiz() {
     const weightedList = document.getElementById('weighted-list');
     if (weightedList) weightedList.style.display = 'none';
     // 讀取答案順序設定
-    //const orderRadio = document.querySelector('input[name="answer-order"]:checked');
-    //answerOrder = orderRadio ? orderRadio.value : 'original';
-    // 預設答案順序為原始順序
-    answerOrder = 'original';
+    const orderRadio = document.querySelector('input[name="answer-order"]:checked');
+    answerOrder = orderRadio ? orderRadio.value : 'original';
     let countValue = document.getElementById('question-count').value;
     let count;
     if (countValue === 'all') {
